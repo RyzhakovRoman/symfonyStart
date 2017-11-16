@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Измененный тайтл {% endblock %}
+
+{% block body %}
+
+    <h1>Переданые параметры -------- {{ name }}</h1>
+
+    <a href="{{ path('genus_show_notes', {'genusName': name}) }}">Вывести записи в json</a>
+    
+{% endblock %}
